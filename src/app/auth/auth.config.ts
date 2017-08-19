@@ -11,11 +11,11 @@ interface AuthConfig {
 };
 
 export const AUTH_CONFIG: AuthConfig = {
-  CLIENT_ID: '[AUTH0_CLIENT_ID]',
-  CLIENT_DOMAIN: '[AUTH0_CLIENT_DOMAIN]', // e.g., kmaida.auth0.com
-  AUDIENCE: '[YOUR_AUTH0_API_AUDIENCE]', // e.g., http://localhost:8083/api/
+  CLIENT_ID: 'GVngmMe2S78tEFRJVrOcssDcIeDOsYnc',
+  CLIENT_DOMAIN: 'eddiezhazha.auth0.com', // e.g., kmaida.auth0.com
+  AUDIENCE: 'http://localhost:8083/api/', // e.g., http://localhost:8083/api/
   REDIRECT: `${ENV.BASE_URI}/callback`,
-  SILENT_REDIRECT: 'http://localhost:8083/silent', // ${ENV.BASE_URI}/silent on PRODUCTION
+  SILENT_REDIRECT: '${ENV.BASE_URI}/silent', // ${ENV.BASE_URI}/silent on PRODUCTION
   SCOPE: 'openid profile',
   NAMESPACE: 'http://myapp.com/roles'
 };
